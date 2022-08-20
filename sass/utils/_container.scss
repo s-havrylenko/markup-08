@@ -1,0 +1,85 @@
+.container {
+  margin-left: auto; 
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+    
+  @media screen and (min-width: 480px) {
+    width: 480px;    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;    
+    font-size: 28px;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+  }
+
+  &__benefits {
+    // margin-bottom: 30px;
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  
+  &__projects {
+    // margin-bottom: 30px;
+    
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__team {
+    // margin-bottom: 30px;
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__clients {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__footer {
+    // display: flex;
+    // align-items: center;
+  
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__portfolio {
+    // margin-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}

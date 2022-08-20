@@ -1,0 +1,59 @@
+.footer {
+  background-color: #2f303a;
+  
+  color: $primary-white-color;
+
+  &__logo-address {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 69px;
+  }
+
+  &__address {
+    margin-top: 20px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71em;
+  }
+
+  &__contact {
+    color: $secondary-text-color;
+
+    font-weight: 500;
+  }
+
+  &__networks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__call {
+    margin-bottom: 20px;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71em;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__form input {
+    width: 358px;
+    margin-right: 12px;
+    padding: 14px 15px;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.24em;
+  
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+}
