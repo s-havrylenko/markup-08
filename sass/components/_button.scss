@@ -30,11 +30,15 @@
     }
   }  
   
-  &__primary--icon {
+  &__primary--icon {    
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    height: 50px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   &__secondery {
@@ -52,7 +56,7 @@
 
   &__secondery--bar {
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 8px;
     }
 
     @media screen and (max-width: 767px) {
@@ -78,6 +82,14 @@
   border: none;
   background-color: transparent;
 
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   &:hover {
     fill: $accent-color;
     cursor: $cursor;
@@ -93,13 +105,5 @@
 
   &.is-open .button-menu__icon-cross {
     display: none;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+  }  
 }

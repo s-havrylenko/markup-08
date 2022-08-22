@@ -2,21 +2,14 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-  }  
+  }
 }
 
 .logo-conteiner {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: auto;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 85px;
   }
 }
 
@@ -69,7 +62,8 @@
   
     transition: color 350ms $timing-function;
 
-    @media screen and (max-width: 767px) {  
+    @media screen and (max-width: 767px) {
+      position: relative;
       display: inline-block;
       padding: 8px;
     }
@@ -78,6 +72,11 @@
       display: flex;
       padding-top: 26px;
       padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 28px;
+      padding-bottom: 28px;
     }
   }      
   
@@ -113,7 +112,6 @@
       background-color: $accent-color;
     }
   }
-
 }
 
 .contact {
@@ -121,19 +119,24 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) {    
+  @media screen and (min-width: 768px) and (max-width: 1199px) {    
     margin-left: 84px;    
   }
 
   @media screen and (min-width: 1200px) {    
     display: flex;
-    margin-left: auto;
-    align-items: center;
-    
-    &.item:not(:last-child) {
-      margin-right: 30px;
-    }   
-  }  
+    margin-left: 305px;   
+  }
+
+  &__box {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      
+      &:not(:last-child) {
+        margin-right: 30px;
+      }   
+    }  
+  }
   
   &__link {
     display: flex;
@@ -179,5 +182,4 @@
       fill: $accent-color;
     }
   }
-
 }

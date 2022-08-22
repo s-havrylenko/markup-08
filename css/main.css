@@ -60,10 +60,21 @@
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container__benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .container__projects {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__projects {
+    padding-bottom: 94px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -72,22 +83,43 @@
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container__team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .container__clients {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
+  .container__clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.container__footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
   .container__footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    display: flex;
   }
 }
 @media screen and (max-width: 1199px) {
   .container__portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -129,8 +161,13 @@ section {
 .button__primary--icon {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  height: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .button__primary--icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .button__secondery {
   color: #212121;
@@ -143,7 +180,7 @@ section {
   margin-left: 10px;
 }
 .button__secondery--bar:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 @media screen and (max-width: 767px) {
   .button__secondery--bar:nth-child(-n+3) {
@@ -164,6 +201,16 @@ section {
   border: none;
   background-color: transparent;
 }
+@media screen and (max-width: 767px) {
+  .button-menu {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
 .button-menu:hover {
   fill: #2196f3;
   cursor: pointer;
@@ -176,16 +223,6 @@ section {
 }
 .button-menu.is-open .button-menu__icon-cross {
   display: none;
-}
-@media screen and (max-width: 767px) {
-  .button-menu {
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .button-menu {
-    display: none;
-  }
 }
 
 body {
@@ -233,7 +270,7 @@ body {
     display: inline-block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .logo {
     white-space: nowrap;
   }
@@ -256,16 +293,7 @@ body {
   .logo-conteiner {
     display: flex;
     align-items: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .logo-conteiner {
     margin-right: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo-conteiner {
-    margin-right: 85px;
   }
 }
 
@@ -315,6 +343,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .site-nav__link {
+    position: relative;
     display: inline-block;
     padding: 8px;
   }
@@ -324,6 +353,12 @@ body {
     display: flex;
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav__link {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -359,7 +394,7 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
     margin-left: 84px;
   }
@@ -367,10 +402,14 @@ body {
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
-    margin-left: auto;
-    align-items: center;
+    margin-left: 305px;
   }
-  .contact.item:not(:last-child) {
+}
+@media screen and (min-width: 1200px) {
+  .contact__box {
+    display: flex;
+  }
+  .contact__box:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -436,7 +475,6 @@ body {
   .hero {
     max-width: 1600px;
     height: 600px;
-    margin-bottom: 94px;
   }
 }
 .hero__title {
@@ -727,19 +765,31 @@ body {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__logo-address {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 235px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .footer__logo-address {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
   }
 }
 .footer__address {
@@ -767,16 +817,20 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__networks {
+    justify-content: center;
+    width: 206px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__networks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 210px;
   }
 }
 .footer__call {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71em;
@@ -787,21 +841,25 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__form {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 73px;
+  }
+}
 .footer__form input {
+  height: 50px;
   padding: 14px 15px;
   font-weight: 400;
   font-size: 16px;
@@ -816,6 +874,12 @@ body {
     max-width: 450px;
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form input {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -1170,6 +1234,12 @@ body {
   .button-bar {
     text-align: center;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-bar {
+    text-align: center;
+    margin-bottom: 50px;
   }
 }
 
