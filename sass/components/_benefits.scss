@@ -1,5 +1,7 @@
 .benefits {
-  // display: flex;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  // }  
 
   &__background-icon {
     display: flex;
@@ -42,18 +44,31 @@
       margin-bottom: 30px;
       }
     }
-    // width: calc((100% - 90px) / 4);
-    // margin-right: 30px;
 
-    // &:nth-child(4n) {
-    //   margin-right: 0px;
-    // }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 2 * 30px) / 2);
+      
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+      margin-right: 30px;
+
+      &:nth-child(4n) {
+        margin-right: 0px;
+      }  
+    }   
   }
 }
 
-
 .benefits__list {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }  
 
-  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }

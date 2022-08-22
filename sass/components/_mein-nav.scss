@@ -1,7 +1,24 @@
-// .mein-nav {
-//   display: flex;
-//   align-items: center;
-// }
+.mein-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }  
+}
+
+.logo-conteiner {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+  }
+}
 
 .menu-conteiner {  
   @media screen and (max-width: 767px) {
@@ -21,8 +38,9 @@
     }
   }
   
-  @media screen and (max-width: 767px) {
-    display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -32,12 +50,13 @@
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  
-  // display: flex;
-  // align-items: center;
-  
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+    
   &__link {
-    position: relative;
     display: block;
       
     color: $primary-text-color;
@@ -50,18 +69,27 @@
   
     transition: color 350ms $timing-function;
 
-    @media screen and (max-width: 767px) {      
+    @media screen and (max-width: 767px) {  
       display: inline-block;
       padding: 8px;
     }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {      
+      display: flex;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
   }      
   
-  &__item:not(:last-child) {    
-    // margin-right: 50px;
-    
+  &__item:not(:last-child) {      
     @media screen and (max-width: 767px) {
       margin-bottom: 40px;
     }
+
+    @media screen and (min-width: 768px) {
+      position: relative;
+      margin-right: 50px;
+    }  
   }
 
   &__link:hover,
@@ -92,21 +120,25 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  // display: flex;
-  // margin-left: auto;
-  // align-items: center;
 
-  // .item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: 768px) {    
+    margin-left: 84px;    
+  }
 
+  @media screen and (min-width: 1200px) {    
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    
+    &.item:not(:last-child) {
+      margin-right: 30px;
+    }   
+  }  
   
   &__link {
     display: flex;
     align-items: center;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-
+    
     color: $secondary-text-color;
     fill: $secondary-text-color;
 
@@ -122,6 +154,11 @@
       justify-content: center;
       padding-top: 8px;
       padding-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
   }
   

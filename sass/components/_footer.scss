@@ -3,11 +3,26 @@
   
   color: $primary-white-color;
 
-  &__logo-address {
-    // display: flex;
-    // flex-wrap: wrap;
-    // margin-right: 69px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 
+  &__container {
+    @media screen and (min-width: 768px) and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;    
+      margin-bottom: 60px;  
+    }
+  }
+
+  &__logo-address {
+    // margin-right: 69px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 235px;
+    }
   }
 
   &__address {
@@ -20,6 +35,10 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 60px;
     } 
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+    } 
   }
 
   &__contact {
@@ -29,32 +48,42 @@
   }
 
   &__networks {
-    // display: flex;
-    // flex-wrap: wrap;
     @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
-      
+      margin-bottom: 60px;      
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 210px;
     }
   }
 
-  &__call {
-    // margin-bottom: 20px;
-  
+  &__call {   
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71em;
-    text-transform: uppercase;  
-    
+    text-transform: uppercase;
+
     @media screen and (max-width: 767px) {
       display: block;
-      margin-bottom: 20px;
-      
-    }
+    }  
   }
 
   &__form {
-    // display: flex;
-    // flex-wrap: wrap;    
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }  
   }
   
   &__form input {
@@ -71,14 +100,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       max-width: 450px;
       width: 100%;
       margin-bottom: 20px;
     }
-  }
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  }  
 }
